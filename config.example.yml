@@ -1,0 +1,13 @@
+# get a access-token:
+# - curl -XPOST https://api.travis-ci.com/auth/github -d 'github_token=GITHUB-TOKEN'
+# - test it: curl -H 'Authorization: token "ACCESS-TOKEN"' https://api.travis-ci.org/repos/YOUR/REPO/builds
+
+test:
+  projects:
+   - url: https://travis-ci.org/some-public-token/travis-cron-test
+     token: mi0l8uQlX3U5EHbE0ym31g
+     branch: master
+
+development:
+
+production:
