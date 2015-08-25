@@ -45,7 +45,7 @@ module TravisCron
       raise "No build found for branch #{branch}" unless build
       last_build_id = build["id"]
 
-      result = RestClient.post("#{base}/requests", {"build_id" => last_build_id}, auth)
+      result = RestClient.post("#{base}/builds/#{last_build_id}/restart", {}, auth)
       result = JSON.load(result)
       !result["flash"][0]["error"] && result['result']
     end
