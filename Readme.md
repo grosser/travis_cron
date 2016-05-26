@@ -1,3 +1,7 @@
+# [Travis now natively supports cron jobs](https://docs.travis-ci.com/user/cron-jobs)
+
+# Deprecated readme
+
 Run travis as cron (also supports travis PRO)
 
 Try locally:
